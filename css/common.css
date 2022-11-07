@@ -1,0 +1,365 @@
+*{
+    margin: 0;
+    padding:0;
+}
+
+.dashed-hr {
+    background-image : linear-gradient(to right, #dddddd, #dddddd 12px, transparent 2px, transparent 8px);  /* 幅2の線を作る */
+    background-size: 20px 12px;          /* グラデーションの幅・高さを指定 */
+    background-position: left bottom;  /* 背景の開始位置を指定 */
+    background-repeat: repeat-x;       /* 横向きにのみ繰り返す */
+    height: 3px;
+    margin: 0 15px;
+}
+
+.cursor-pointer{
+    cursor: pointer;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.kosugi-maru-font {
+    font-family: 'Kosugi Maru', sans-serif;
+    color: #333;
+}
+
+.content-outer {
+    padding-top: 71px;
+}
+
+main {
+    /* 画像ファイルの指定 */
+    background-image: url(/img/background.jpg);
+    /*!* 画像を常に天地左右の中央に配置 *!*/
+    background-position: center center;
+    /*!* 画像をタイル状に繰り返し表示しない *!*/
+    background-repeat: no-repeat;
+    /*!* コンテンツの高さが画像の高さより大きい時、動かないように固定 *!*/
+    background-attachment: fixed;
+    /* 表示するコンテナの大きさに基づいて、背景画像を調整 */
+    background-size: cover;
+    /* 背景画像が読み込まれる前に表示される背景のカラー */
+    background-color: #f1f1f1;
+}
+
+.title-img-outer {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-img {
+    width: 250px;
+}
+
+.prekids-color {
+    color: #e4007f;
+}
+
+.prekids-background-color {
+    background-color: #e4007f;
+}
+
+.kids1-color {
+    color: #f39800;
+}
+
+.kids1-background-color {
+    background-color: #f39800;
+}
+
+.kids2-color {
+    color: #22ac38;
+}
+
+.kids2-background-color {
+    background-color: #22ac38;
+}
+
+.junior-color {
+    color: #e60012;
+}
+
+.junior-background-color {
+    background-color: #e60012;
+}
+
+.acrobat-color {
+    color: #00a0e9;
+}
+
+.acrobat-background-color {
+    background-color: #00a0e9;
+}
+
+@media screen and (max-width: 400px) {}
+
+/*******************/
+/*　レスポンシブ　*/
+/*******************/
+
+@media screen and (max-width: 500px) {
+    main {
+        /* 画像ファイルの指定 */
+        background-image: url(/img/background.jpg);
+        /* 画像を常に天地左右の中央に配置 */
+        background-position: left;
+        /* 画像をタイル状に繰り返し表示しない */
+        background-repeat: repeat;
+        /* コンテンツの高さが画像の高さより大きい時、動かないように固定 */
+        background-attachment: fixed;
+        /* 表示するコンテナの大きさに基づいて、背景画像を調整 */
+        background-size: contain;
+        /* 背景画像が読み込まれる前に表示される背景のカラー */
+        background-color: #e9e9e9;
+    }
+}
+
+/*******************/
+/*　ヘッダーについて　*/
+/*******************/
+.header-outer {
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+.header-wrapper {
+    width: 1000px;
+}
+
+.header-pc {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-logo-outer {
+    flex-basis: 15%;
+    padding-left: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.header-logo {
+    width: 70px;
+}
+
+.header-menu-outer {
+    flex-basis: 70%;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 5px;
+}
+
+.header-menu-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header-menu-wrapper div {
+    padding: 0 3px;
+}
+
+.header-sp {
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    .header-pc {
+        display: none;
+    }
+
+    .header-sp {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 15px;
+    }
+
+    .header-outer {
+        background-color: rgba(255,129,0,0);
+    }
+
+    .header-sp-logo {
+        width: 75px;
+        padding-top: 5px;
+    }
+
+    /******************/
+    /* ハンバーガーアイコン */
+    /******************/
+    .hamburger-menu-wrapper {
+        height: 100%;
+        overflow-x: hidden;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .overlay {
+        content: "";
+        display: block;
+        width: 0;
+        height: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 2;
+        opacity: 0;
+        transition: opacity .5s;
+    }
+    .overlay.open {
+        width: 100%;
+        height: 100%;
+        opacity: 1;
+    }
+
+    .menu-trigger {
+        display: inline-block;
+        width: 37px;
+        height: 30px;
+        vertical-align: middle;
+        cursor: pointer;
+        position: fixed;
+        z-index: 100;
+        top: 25px;
+        right: 15px;
+    }
+
+    .menu-trigger span {
+        display: inline-block;
+        box-sizing: border-box;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 5px;
+        background-color: #000000;
+        transition: all .5s;
+        border-radius: 10px;
+    }
+
+    .menu-trigger.active span{
+        background-color: black;
+    }
+
+    .menu-trigger span:nth-of-type(1) {
+        top: 0;
+    }
+    .menu-trigger.active span:nth-of-type(1) {
+        transform: translateY(13px) rotate(-45deg);
+    }
+    .menu-trigger span:nth-of-type(2) {
+        top: 12px;
+    }
+    .menu-trigger.active span:nth-of-type(2) {
+        opacity: 0;
+    }
+    .menu-trigger span:nth-of-type(3) {
+        bottom: 0;
+    }
+    .menu-trigger.active span:nth-of-type(3) {
+        transform: translateY(-12px) rotate(45deg);
+    }
+
+    nav {
+        width: 100%;
+        height: 100%;
+        padding-top: 80px;
+        background-color: #ffffff;
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 10;
+        transform: translate(100%);
+        transition: all .5s;
+    }
+
+    nav.open {
+        transform: translateZ(0);
+    }
+    nav li {
+        list-style-type:none;
+    }
+
+    .nav-menu-wrapper {
+        margin: 0 20px;
+        padding: 24px 0;
+        cursor: pointer;
+        color: black;
+        font-size: 23px;
+    }
+
+    .nav-menu-wrapper a {
+        margin-left: 5px;
+    }
+
+    .nav-menu-wrapper::after{
+        content: "";
+        display: block;
+        transform: translateY(-50%);   /* 縦軸をセンタリングする */
+        border: 13px solid transparent;
+        border-left: 17px solid #62b0d9;   /* 好みで色を変えてください */
+        float: right;
+        top: calc(50% - 2px);
+        margin-top: 10px;
+    }
+}
+
+/*******************/
+/*　フッターについて　*/
+/*******************/
+
+
+/*******************/
+/*　フォントサイズ　*/
+/*******************/
+
+
+.font-size-14 {
+    font-size: 14px;
+}
+
+/****************/
+/* ポップアップ */
+/****************/
+.scroll-fade {
+    opacity: 0;
+    transition: all 1s/*処理にかかる時間*/;
+}
+
+.scroll-up {
+    opacity: 0;
+    transform: translateY(100px)/*スクロールアップする距離*/;
+    transition: all 1s/*処理にかかる時間*/;
+}
+
+.scroll-up.done, .scroll-fade.done {
+    opacity : 1;
+    transform : translate(0, 0);
+}
+
+.load-fade {
+    opacity : 0;
+    transition : all 1s/*処理にかかる時間*/;
+}
+
+.load-up {
+    opacity: 0;
+    transform: translateY(100px)/*スクロールアップする距離*/;
+    transition: all 1s/*処理にかかる時間*/;
+}
+
+.load-up.done, .load-fade.done {
+    opacity : 1;
+    transform : translate(0, 0);
+}
