@@ -122,16 +122,6 @@ main {
 /*******************/
 /*　ヘッダーについて　*/
 /*******************/
-/* TODO aoki あとで消す */
-.test {
-    z-index: 1000;
-    position: fixed;
-    width: 100%;
-    height: 10000px;
-    background-color: black;
-}
-/* ↑ TODO aoki あとで消す */
-
 .header-outer {
     z-index: 1;
     display: flex;

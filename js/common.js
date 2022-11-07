@@ -69,12 +69,3 @@ function hamburgerMenu(){
         $('#fixed').fadeOut(100);
     }
 }
-
-function submit() {
-    var password = $('.password').val();
-    console.log(password);
-    if(password === 'frectP') {
-        console.log("OK");
-        $('.password-outer').removeClass('test');
-    }
-}
