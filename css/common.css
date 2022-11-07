@@ -105,7 +105,7 @@ main {
 @media screen and (max-width: 500px) {
     main {
         /* 画像ファイルの指定 */
-        background-image: url(/img/background.jpg);
+        background-image: url(../img/background.jpg);
         /* 画像を常に天地左右の中央に配置 */
         background-position: left;
         /* 画像をタイル状に繰り返し表示しない */
