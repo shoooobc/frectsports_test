@@ -1,11 +1,11 @@
 // ヘッダーについて
 $(function(){
-    $("#header").load("../templates/header.html");
+    $("#header").load("templates/header.html");
 });
 
 // フッターについて
 $(function(){
-    $("#footer").load("../templates/footer.html");
+    $("#footer").load("templates/footer.html");
 });
 
 ////////////////////////////
