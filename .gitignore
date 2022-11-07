@@ -1,0 +1,4 @@
+# ignore log files and databases
+.idea
+.idea/
+.DS_Store
