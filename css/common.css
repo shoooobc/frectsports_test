@@ -412,8 +412,8 @@ svg {
 }
 .foreground {
     fill: black;
-    font-weight: bold;
 }
+
 .background {
     stroke: white;
     stroke-width: 5;
