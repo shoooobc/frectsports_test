@@ -54,6 +54,9 @@ function scroll_effect(){
     });
 }
 
+//////////////////////////
+// ハンバーガーアイコン  //
+//////////////////////////
 function hamburgerMenu(){
     if($('.menu-trigger').hasClass('active')){
         $('.menu-trigger').removeClass('active');
