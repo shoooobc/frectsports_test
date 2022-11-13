@@ -407,16 +407,21 @@ main {
 svg {
     width: 1px;
     height: 1px;
-    padding: 12px;
+    padding-top: 5px;
+    padding-bottom: 14px;
     overflow: visible;
 }
 .foreground {
+    font-size: 18px;
     fill: black;
+    font-weight: bold;
 }
 
 .background {
+    font-size: 18px;
     stroke: white;
-    stroke-width: 5;
+    stroke-width: 7;
+    font-weight: bold;
     stroke-linejoin: round;
     filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.4));
 }
