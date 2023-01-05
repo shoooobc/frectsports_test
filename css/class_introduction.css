@@ -98,6 +98,10 @@
     padding-bottom: 5px;
 }
 
+.start-date-schedule-acrobat-outer p {
+    padding: 7px 0 !important;
+}
+
 .class-content-info-title {
     position:relative;
     margin-left: 12px;
@@ -121,6 +125,18 @@
 
 .kids1-class-background:before {
     background-color: #f39800;
+}
+
+.kids2-class-background:before {
+    background-color: #22ac38;
+}
+
+.junior-class-background:before {
+    background-color: #e60012;
+}
+
+.acrobat-class-background:before {
+    background-color: #00a0e9;
 }
 
 .class-description-outer {
