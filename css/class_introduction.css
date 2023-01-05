@@ -6,14 +6,13 @@
 
 .class-wrapper {
     width: 990px;
-    margin: 0 5px;
+    margin: 0 20px;
 }
 
 .class-content {
-    width: 100%;
     margin-top: 80px;
-    padding: 20px 0 10px 0;
-
+    padding: 20px 10px;
+    background-color: rgba(255, 255, 255, 0.7);
 }
 
 .class-name-outer {
@@ -38,105 +37,96 @@
     color: white;
 }
 
-.class-img-description-outer {
+.class-content-info-outer {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
     width: 100%;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
 }
 
-.class-img-outer {
-    flex-basis: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.class-content-info-left-outer {
+    flex-basis: 48%;
 }
 
-.class-img-content {
-    padding: 5px;
+.class-content-info-right-outer {
+    flex-basis: 48%;
+}
+
+.class-content-info-right-wrapper {
+    margin-top: 15px;
 }
 
 .class-img {
     width: 100%;
 }
 
-.class-description-outer {
-    flex-basis: 46%;
+.class-age-outer {
+    text-align: center;
 }
 
-.class-description-outer p {
-    filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.4));
-    font-weight: bold;
-}
-
-.age-outer {
-    display: flex;
-    justify-content: center;
-    padding-top: 5px;
-}
-
-.age {
-    font-weight: bold;
-    text-shadow:1px 1px 0 #FFF, -1px -1px 0 #FFF,
-    -1px 1px 0 #FFF, 1px -1px 0 #FFF,
-    0px 1px 0 #FFF,  0-1px 0 #FFF,
-    -1px 0 0 #FFF, 1px 0 0 #FFF;
-}
-
-.policy-outer {
-    margin-top: 15px;
-}
-
-.main-lesson-outer {
-    margin-top: 15px;
-}
-
-.capacity-outer {
-    margin-top: 15px;
-}
-
-.monthly-fee-outer {
-    margin-top: 15px;
-}
-
-.class-time-outer {
-    margin-top: 10px;
-    padding: 10px 0;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    background: rgba(255, 255, 255, 0.6);
-}
-
-.class-time-outer p {
-    filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.4));
-    font-weight: bold;
+.class-age-outer p {
+    padding-top: 3px;
+    padding-bottom: 9px;
 }
 
 .start-date-outer {
-    display: flex;
-    justify-content: center;
+    text-align: center;
+    background-color: #838383;
+    width: 100%;
 }
 
-.start-date {
-    color: #6e6e6e;
-    padding: 10px 0;
+.start-date-outer p {
+    color: white;
+    padding: 8px;
 }
 
-@media screen and (max-width: 750px) {
-    .class-img-description-outer {
+.start-date-schedule-outer {
+    background-color: white;
+    width: 100%;
+    text-align: center;
+}
+
+.start-date-schedule-outer p:first-child {
+    padding-top: 5px;
+}
+
+.start-date-schedule-outer p:last-child {
+    padding-bottom: 5px;
+}
+
+.class-content-info-title {
+    position:relative;
+    margin-left: 12px;
+    color: #666666;
+}
+
+.class-content-info-title:before {
+    content: "";
+    display: inline-block;
+    width: 5px;
+    height: 20px;
+    background-color: #e4007f;
+    position: absolute;
+    top: 1px;
+    left: -10px;
+    border-radius: 10px;
+}
+
+.class-description-outer {
+    margin-top: 5px;
+}
+
+@media screen and (max-width: 800px) {
+    .class-content-info-outer {
         flex-wrap: wrap;
     }
 
-    .class-img-outer {
+    .class-content-info-left-outer {
         flex-basis: auto;
     }
 
-    .class-description-outer {
+    .class-content-info-right-outer {
+        margin-top: 15px;
         flex-basis: auto;
-    }
-
-    .class-img-content {
-        padding: 5px 0;
     }
 }
