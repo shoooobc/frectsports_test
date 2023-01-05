@@ -9,8 +9,12 @@
     margin: 0 20px;
 }
 
+.class-content-top {
+    margin-top: 30px !important;
+}
+
 .class-content {
-    margin-top: 80px;
+    margin-top: 75px;
     padding: 20px 10px;
     background-color: rgba(255, 255, 255, 0.7);
 }
