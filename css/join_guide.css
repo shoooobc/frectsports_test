@@ -1,0 +1,188 @@
+.price-outer {
+    display: flex;
+    justify-content: center;
+}
+
+.price-wrapper {
+    width: 990px;
+    margin: 0 20px;
+}
+
+.price-title-img {
+    width: 110px;
+}
+
+.admission-fee-outer {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.admission-fee-content {
+    background-color: #deeff7;
+    flex-basis: 45%;
+    display: flex;
+    flex-direction: column;
+}
+
+.admission-fee-title-outer {
+    padding: 5px;
+}
+
+.admission-fee-info-outer {
+    background-color: white;
+    margin: 0 5px 5px 5px;
+    padding: 5px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.year-price {
+    margin-bottom: 3px;
+}
+
+.year-info {
+    margin-top: -5px;
+}
+
+.monthly-fee-outer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.monthly-fee-wrapper {
+    width: 100%;
+    background-color: #deeff7;
+}
+
+.monthly-fee-title {
+    margin: 10px;
+}
+
+.monthly-fee-class-outer {
+    display: flex;
+    justify-content: center;
+}
+
+.monthly-fee-class-outer div {
+    margin: 0 3px 3px;
+    background-color: white;
+    flex-basis: 50%;
+}
+
+.monthly-fee-class-outer div p {
+    margin: 5px;
+}
+
+.monthly-fee-class {
+    padding-left: 20px;
+}
+
+.monthly-fee {
+    float: right;
+    padding-right: 20px;
+}
+
+.join-title-img {
+    width: 210px;
+}
+
+.join-outer {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.join-wrapper {
+    width: 990px;
+    margin: 0 20px;
+}
+
+.join-inner {
+    margin-top: 20px;
+}
+
+.join-content {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 30px;
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+
+.join-description-item {
+    padding: 7px 15px;
+}
+
+.join-description-line-height p {
+    line-height:125%;
+}
+
+.join-step1-btn-outer {
+    display: flex;
+    justify-content: center;
+    padding: 5px 0;
+}
+
+.join-step1-btn {
+    color: white;
+    width: 200px;
+    padding: 15px 20px;
+    border-radius: 25px;
+}
+
+.class-list-btn-color {
+    background-color: #036eb8;
+}
+
+.line-reserve-btn-color {
+    background-color: #06C755;
+}
+
+.step-title {
+    position: relative;
+    bottom: 15px;
+    text-shadow: 1px 1px 0 #FFF, -1px -1px 0 #FFF,
+    -1px 1px 0 #FFF, 1px -1px 0 #FFF,
+    0 1px 0 #FFF,  0-1px 0 #FFF,
+    -1px 0 0 #FFF, 1px 0 0 #FFF;
+}
+
+.down-arrow-outer {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    bottom: 10px;
+}
+
+.down-arrow-img {
+    width: 150px;
+}
+
+@media screen and (max-width: 500px) {
+    .admission-fee-outer {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .admission-fee-content:first-child {
+        margin-bottom: 30px;
+    }
+
+    .monthly-fee-class {
+        padding-left: 5px;
+        font-size: 16px; !important;
+    }
+
+    .monthly-fee {
+        float: none;
+        text-align: center;
+        padding-right: 0;
+        font-size: 16px; !important;
+    }
+}
