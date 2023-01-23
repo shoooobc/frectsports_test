@@ -98,10 +98,10 @@
     justify-content: center;
 }
 
-.join-wrapper {
-    width: 990px;
-    margin: 0 20px;
-}
+/*.join-wrapper {*/
+/*    width: 990px;*/
+/*    margin: 0 20px;*/
+/*}*/
 
 .join-inner {
     margin-top: 20px;
@@ -109,7 +109,6 @@
 
 .join-content {
     width: 100%;
-    background-color: rgba(255, 255, 255, 0.8);
     border-radius: 30px;
     margin-top: 20px;
     padding-bottom: 20px;

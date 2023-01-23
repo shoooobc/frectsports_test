@@ -1,0 +1,106 @@
+.thought-outer {
+    padding: 15px 10px 30px;
+}
+
+.thought-title-outer {
+    display: flex;
+    justify-content: center;
+}
+
+.thought-info-outer {
+    padding: 5px;
+}
+
+.thought-title-img {
+    width: 110px;
+}
+
+.thought-img {
+    width: 75px;
+}
+
+.experience-flow-outer {
+    margin-top: 100px;
+}
+
+.experience-flow-wrapper {
+    width: 750px !important;
+}
+
+.experience-flow-content {
+    padding: 15px 25px 30px;
+}
+
+.experience-flow-title-outer {
+    padding-bottom: 15px;
+}
+
+.experience-flow-title-content {
+    display: flex;
+    justify-content: center;
+}
+
+.under-line-title-outer{
+    display: flex;
+    justify-content: center;
+}
+
+.under-line-title{
+    width: 50px;
+    border-bottom: solid 3px #ff0000;
+    border-radius: 10px;
+}
+
+.experience-flow-description-outer p {
+    padding: 2px 0;
+}
+
+.experience-step-outer {
+    margin: 10px 0;
+}
+
+.experience-step-title-outer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.left-step-outer {
+    flex-basis: 8%;
+    padding: 10px;
+    margin-right: 2px;
+    background-color: #15ab00;
+    color: white;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.right-step-outer {
+    flex-basis: 92%;
+    padding: 10px;
+    background-color: #ababab;
+    color: white;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.experience-step-description-outer {
+    margin: 7px 0;
+}
+
+.experience-step-img {
+    width: 100%;
+}
+
+@media screen and (max-width: 500px) {
+    .left-step-outer {
+        padding: 6px;
+    }
+
+    .right-step-outer {
+        padding: 6px;
+    }
+    .line-btn {
+        width: 125px;
+    }
+}
