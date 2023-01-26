@@ -15,6 +15,7 @@
     <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;700&family=Sawarabi+Mincho&display=swap" rel="stylesheet">
     <!--ページに依存-->
     <link rel="stylesheet" href="css/beginner.css">
+    <script type="text/javascript" src="js/join_guide.js"></script>
 </head>
 <body>
 <header id="header"></header>
@@ -43,15 +44,15 @@
             </div>
         </div>
     </div>
-    <div class="background-outer scroll-up experience-flow-outer">
+    <div class="background-outer scroll-up beginner-div-outer">
         <div class="background-wrapper experience-flow-wrapper">
             <div class="experience-flow-content">
-                <div class="experience-flow-title-outer">
-                    <div class="experience-flow-title-content">
+                <div class="beginner-div-title-outer">
+                    <div class="beginner-div-title-content">
                         <p class="font-size-18"><b>無料体験の流れ</b></p>
                     </div>
                     <div class="under-line-title-outer">
-                        <div class="under-line-title"></div>
+                        <div class="under-line-title experience-flow-title-under-line"></div>
                     </div>
                 </div>
                 <div class="experience-flow-description-outer">
@@ -101,6 +102,185 @@
                     </div>
                     <div class="text-center">
                         <a href="https://lin.ee/463cojtt"><img src="https://scdn.line-apps.com/n/line_add_friends/btn/ja.png" alt="友だち追加" class="line-btn"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="background-outer scroll-up beginner-div-outer">
+        <div class="background-wrapper q-a-wrapper">
+            <div class="faq-content">
+                <div class="beginner-div-title-outer">
+                    <div class="beginner-div-title-content">
+                        <p class="font-size-18"><b>よくある質問</b></p>
+                    </div>
+                    <div class="under-line-title-outer">
+                        <div class="under-line-title faq-title-under-line"></div>
+                    </div>
+                </div>
+                <div>
+                    <div class="faq-info-outer" onclick="showAnswer(1)">
+                        <div class="faq-info-wrapper">
+                            <div class="faq-q-img-outer"><img src="img/beginner/question.png" class="faq-q-img"></div>
+                            <div class="faq-q-outer"><p>運動神経がなくても大丈夫ですか？</p></div>
+                        </div>
+                        <div class="plus-minus plus-minus-1"><div class="menu-icon"><div class="accordion"><span></span></div></div></div>
+                    </div>
+                    <div class="faq-info-answer-outer answer1">
+                        <div class="faq-info-answer-wrapper">
+                            <div class="faq-a-img-outer"><img src="img/beginner/answer.png" class="faq-a-img"></div>
+                            <div class="answer-outer"><p>大丈夫です</p></div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="faq-info-outer" onclick="showAnswer(2)">
+                        <div class="faq-info-wrapper">
+                            <div class="faq-q-img-outer"><img src="img/beginner/question.png" class="faq-q-img"></div>
+                            <div class="faq-q-outer"><p>障害があっても大丈夫ですか？</p></div>
+                        </div>
+                        <div class="plus-minus plus-minus-2"><div class="menu-icon"><div class="accordion"><span></span></div></div></div>
+                    </div>
+                    <div class="faq-info-answer-outer answer2">
+                        <div class="faq-info-answer-wrapper">
+                            <div class="faq-a-img-outer"><img src="img/beginner/answer.png" class="faq-a-img"></div>
+                            <div class="answer-outer"><p>大丈夫です</p></div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="faq-info-outer" onclick="showAnswer(3)">
+                        <div class="faq-info-wrapper">
+                            <div class="faq-q-img-outer"><img src="img/beginner/question.png" class="faq-q-img"></div>
+                            <div class="faq-q-outer"><p>振替の制度はありますか？</p></div>
+                        </div>
+                        <div class="plus-minus plus-minus-3"><div class="menu-icon"><div class="accordion"><span></span></div></div></div>
+                    </div>
+                    <div class="faq-info-answer-outer answer3">
+                        <div class="faq-info-answer-wrapper">
+                            <div class="faq-a-img-outer"><img src="img/beginner/answer.png" class="faq-a-img"></div>
+                            <div class="answer-outer"><p>大丈夫です大丈夫です大丈夫です大丈夫です大丈夫です大丈夫です</p></div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="faq-info-outer" onclick="showAnswer(4)">
+                        <div class="faq-info-wrapper">
+                            <div class="faq-q-img-outer"><img src="img/beginner/question.png" class="faq-q-img"></div>
+                            <div class="faq-q-outer"><p>集団行動が苦手なのですが大丈夫でしょうか？</p></div>
+                        </div>
+                        <div class="plus-minus plus-minus-4"><div class="menu-icon"><div class="accordion"><span></span></div></div></div>
+                    </div>
+                    <div class="faq-info-answer-outer answer4">
+                        <div class="faq-info-answer-wrapper">
+                            <div class="faq-a-img-outer"><img src="img/beginner/answer.png" class="faq-a-img"></div>
+                            <div class="answer-outer"><p>大丈夫です大丈夫です大丈夫です大丈夫です大丈夫です大丈夫です</p></div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="faq-info-outer" onclick="showAnswer(5)">
+                        <div class="faq-info-wrapper">
+                            <div class="faq-q-img-outer"><img src="img/beginner/question.png" class="faq-q-img"></div>
+                            <div class="faq-q-outer"><p>レッスンはどういった内容で行うのでしょうか？</p></div>
+                        </div>
+                        <div class="plus-minus plus-minus-5"><div class="menu-icon"><div class="accordion"><span></span></div></div></div>
+                    </div>
+                    <div class="faq-info-answer-outer answer5">
+                        <div class="faq-info-answer-wrapper">
+                            <div class="faq-a-img-outer"><img src="img/beginner/answer.png" class="faq-a-img"></div>
+                            <div class="answer-outer"><p>大丈夫です大丈夫です大丈夫です大丈夫です大丈夫です大丈夫です</p></div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="faq-info-outer" onclick="showAnswer(6)">
+                        <div class="faq-info-wrapper">
+                            <div class="faq-q-img-outer"><img src="img/beginner/question.png" class="faq-q-img"></div>
+                            <div class="faq-q-outer"><p>レッスンはどういった内容で行うのでしょうか？</p></div>
+                        </div>
+                        <div class="plus-minus plus-minus-6"><div class="menu-icon"><div class="accordion"><span></span></div></div></div>
+                    </div>
+                    <div class="faq-info-answer-outer answer6">
+                        <div class="faq-info-answer-wrapper">
+                            <div class="faq-a-img-outer"><img src="img/beginner/answer.png" class="faq-a-img"></div>
+                            <div class="answer-outer"><p>大丈夫です大丈夫です大丈夫です大丈夫です大丈夫です大丈夫です</p></div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="faq-info-outer" onclick="showAnswer(7)">
+                        <div class="faq-info-wrapper">
+                            <div class="faq-q-img-outer"><img src="img/beginner/question.png" class="faq-q-img"></div>
+                            <div class="faq-q-outer"><p>年間スケジュールは決まっていますか？</p></div>
+                        </div>
+                        <div class="plus-minus plus-minus-7"><div class="menu-icon"><div class="accordion"><span></span></div></div></div>
+                    </div>
+                    <div class="faq-info-answer-outer answer7">
+                        <div class="faq-info-answer-wrapper">
+                            <div class="faq-a-img-outer"><img src="img/beginner/answer.png" class="faq-a-img"></div>
+                            <div class="answer-outer"><p>大丈夫です大丈夫です大丈夫です大丈夫です大丈夫です大丈夫です</p></div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="faq-info-outer" onclick="showAnswer(8)">
+                        <div class="faq-info-wrapper">
+                            <div class="faq-q-img-outer"><img src="img/beginner/question.png" class="faq-q-img"></div>
+                            <div class="faq-q-outer"><p>体験は無料なのでしょうか？</p></div>
+                        </div>
+                        <div class="plus-minus plus-minus-8"><div class="menu-icon"><div class="accordion"><span></span></div></div></div>
+                    </div>
+                    <div class="faq-info-answer-outer answer8">
+                        <div class="faq-info-answer-wrapper">
+                            <div class="faq-a-img-outer"><img src="img/beginner/answer.png" class="faq-a-img"></div>
+                            <div class="answer-outer"><p>大丈夫です大丈夫です大丈夫です大丈夫です大丈夫です大丈夫です</p></div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="faq-info-outer" onclick="showAnswer(9)">
+                        <div class="faq-info-wrapper">
+                            <div class="faq-q-img-outer"><img src="img/beginner/question.png" class="faq-q-img"></div>
+                            <div class="faq-q-outer"><p>体験から入会までの流れを教えてください</p></div>
+                        </div>
+                        <div class="plus-minus plus-minus-9"><div class="menu-icon"><div class="accordion"><span></span></div></div></div>
+                    </div>
+                    <div class="faq-info-answer-outer answer9">
+                        <div class="faq-info-answer-wrapper">
+                            <div class="faq-a-img-outer"><img src="img/beginner/answer.png" class="faq-a-img"></div>
+                            <div class="answer-outer"><p>大丈夫です大丈夫です大丈夫です大丈夫です大丈夫です大丈夫です</p></div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="faq-info-outer" onclick="showAnswer(10)">
+                        <div class="faq-info-wrapper">
+                            <div class="faq-q-img-outer"><img src="img/beginner/question.png" class="faq-q-img"></div>
+                            <div class="faq-q-outer"><p>休会精度はありますか？</p></div>
+                        </div>
+                        <div class="plus-minus plus-minus-10"><div class="menu-icon"><div class="accordion"><span></span></div></div></div>
+                    </div>
+                    <div class="faq-info-answer-outer answer10">
+                        <div class="faq-info-answer-wrapper">
+                            <div class="faq-a-img-outer"><img src="img/beginner/answer.png" class="faq-a-img"></div>
+                            <div class="answer-outer"><p>大丈夫です大丈夫です大丈夫です大丈夫です大丈夫です大丈夫です</p></div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="faq-info-outer" onclick="showAnswer(11)">
+                        <div class="faq-info-wrapper">
+                            <div class="faq-q-img-outer"><img src="img/beginner/question.png" class="faq-q-img"></div>
+                            <div class="faq-q-outer"><p>万が一、怪我をしてしまった際や、させてしまった場合の補償制度はありますか？</p></div>
+                        </div>
+                        <div class="plus-minus plus-minus-11"><div class="menu-icon"><div class="accordion"><span></span></div></div></div>
+                    </div>
+                    <div class="faq-info-answer-outer answer11">
+                        <div class="faq-info-answer-wrapper">
+                            <div class="faq-a-img-outer"><img src="img/beginner/answer.png" class="faq-a-img"></div>
+                            <div class="answer-outer"><p>保険に加入していますので、怪我をしても大丈夫です</p></div>
+                        </div>
                     </div>
                 </div>
             </div>
