@@ -1,0 +1,117 @@
+.subtitle {
+    color: #62b0d9;
+}
+
+.teacher-plate-outer {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.teacher-plate-wrapper {
+    width: 700px;
+    margin: 0 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.teacher-pate-img {
+    width: 160px;
+}
+
+.teacher-wrapper {
+    border-radius: 0;
+}
+
+.teacher-content {
+    padding: 20px;
+}
+
+.teacher-comment-outer {
+    display: flex;
+    justify-content: center;
+}
+
+.teacher-info-outer {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.teacher-info-img-outer {
+    flex-basis: 45%;
+}
+
+.teacher-info-content {
+    flex-basis: 45%;
+}
+
+.teacher-info-img {
+    width: 100%;
+}
+
+.teacher-info-inner {
+    padding: 10px 0;
+}
+
+.teacher-career-outer p {
+    margin: 10px 0;
+}
+
+.teacher-sub-info-outer {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.teacher-hobby-outer {
+    flex-basis: 45%;
+}
+
+.teacher-greet-outer {
+    flex-basis: 45%;
+}
+
+.hobby-greet {
+    text-align: center;
+}
+
+.teacher-hobby-wrapper p {
+    margin: 10px 0;
+}
+
+.teacher-greet-wrapper p {
+    margin: 10px 0;
+}
+
+@media screen and (max-width: 850px) {
+    .teacher-info-outer {
+        flex-wrap: wrap;
+    }
+
+    .teacher-info-img-outer {
+        flex-basis: 100%;
+    }
+
+    .teacher-info-content {
+        flex-basis: 100%;
+    }
+
+    .teacher-sub-info-outer {
+        margin-top: 0;
+        flex-wrap: wrap;
+    }
+
+    .teacher-hobby-outer {
+        flex-basis: 100%;
+    }
+
+    .teacher-greet-outer {
+        flex-basis: 100%;
+    }
+
+    .hobby-greet {
+        text-align: start;
+    }
+}
